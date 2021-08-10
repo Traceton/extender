@@ -3,20 +3,11 @@ require 'thor'
 class RailsCLI < Thor
 
   class_option :verbose, :type => :boolean, :aliases => "-v"
-  desc "new DIRECTORY", "Create a new rails app"
-  def new
-    # ...
-  end
-
-  desc "generate THING PARAMETERS", "Generate controller / model / migration"
-  def generate
-    # ...
-  end
-
-  desc "console", "Start a rails console"
-  def console
-    # ...
-  end
   
+  desc "generateTailwind THING PARAMETERS", "Generate Tailwind 2.0 Views"
+  def generateTailwind
+    # ...
+  end
+
 end
 RailsCLI.start(ARGV)
